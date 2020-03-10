@@ -9,7 +9,7 @@ public class AuthenticationFilter implements Filter {
     public void destroy() {
     }
 
-    //TODO wrong? dispacher? idea of filter?
+    //TODO wrong? dispacher? idea of filter? POPRAWIC ZEBY NIEAUTORYZOWANEJ OSOBIE NIE POZWOLIL ZOBACZUYC!!
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
         System.out.println("Redirection to AuthenticationFilter");
 

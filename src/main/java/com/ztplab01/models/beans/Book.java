@@ -15,11 +15,20 @@ public class Book {
         this.genre = "genre";
     }
 
-    public Book(String title, String author, String releasedDate, String genre) {
+    public Book(int id, String title, String author, String releasedDate, String genre) {
+        this.id = id;
         this.title = title;
         this.author = author;
         this.releasedDate = releasedDate;
         this.genre = genre;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTitle() {
